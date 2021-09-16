@@ -1,14 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=STIX+Two+Text:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=STIX+Two+Text:ital@1&display=swap');
 :root{
-    --primary-color:rgb(2, 99, 78);
-    --secondary-color:rgb(46, 202, 168);
+    --primary-color:blueviolet;
+    --secondary-color:rgba(110, 43, 187, 0.747);
+}
+*{
+    background-color: var(--primary-color);
 }
 .container {
     display: flex;
     flex-direction: column;
     padding: 4px 4px;
     margin: 2px 400px;
-    background-color:var(--primary-color);
+    /* background-color:var(--primary-color); */
     text-align: center;
     font-family: 'Open Sans', sans-serif;
 }
@@ -18,15 +21,22 @@
     height: 32px;
 }
 #check-button{
-    border: none;
-    background-color: rgb(35, 166, 175);
+    border: 1px solid black;
+    background-color: var(--secondary-color);
     color: rgb(71, 94, 95);
     /* margin: 6px; */
     height: 30px;
     width: 100px;
     margin-left: 141px;
+    color: black;
+
 }
 table,tr,th,td{
     border:1px solid black;
     border-collapse: collapse;
+}
+.foot{
+    
+    margin-top: 90px; 
+    text-align: center;
 }
